@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Move & Note",
+  "description": "A polished new-tab dashboard for personal notes and daily gym check-ins.",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "host_permissions": ["https://zenquotes.io/*"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

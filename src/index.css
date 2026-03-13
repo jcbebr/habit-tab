@@ -1,0 +1,156 @@
+:root {
+  color: #271c38;
+  background:
+    radial-gradient(circle at top left, rgba(240, 171, 252, 0.28), transparent 32%),
+    radial-gradient(circle at top right, rgba(167, 139, 250, 0.24), transparent 28%),
+    linear-gradient(180deg, #fff9fe 0%, #fffefe 40%, #f8f4ff 100%);
+  font-family: Inter, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.loading-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.page-shell {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.hero-card {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.82)),
+    linear-gradient(135deg, rgba(255, 235, 250, 0.9), rgba(243, 232, 255, 0.8));
+  border: 1px solid rgba(186, 104, 200, 0.16);
+}
+
+.hero-copy {
+  max-width: 56rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(70, 48, 102, 0.82);
+}
+
+.glass-card,
+.metric-card,
+.empty-card,
+.list-row {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(120, 88, 168, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.accent-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(249, 243, 255, 0.92));
+}
+
+.metric-card {
+  box-shadow: 0 16px 40px rgba(171, 112, 255, 0.08);
+}
+
+.quote-text {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.soft-input input,
+.soft-textarea textarea {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(140, 102, 189, 0.18);
+}
+
+.exercise-dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 999px;
+  display: inline-block;
+  flex: 0 0 auto;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
+.color-picker-input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.calendar-shell {
+  align-self: center;
+  width: 100%;
+}
+
+.calendar-shell .mantine-DatePicker-calendarHeader {
+  margin-bottom: 8px;
+}
+
+.calendar-shell .mantine-DatePicker-month {
+  min-width: 100%;
+}
+
+.calendar-shell .mantine-DatePicker-day {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.calendar-day {
+  min-height: 2.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.calendar-day-markers {
+  min-height: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18rem;
+  flex-wrap: wrap;
+}
+
+.calendar-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.chart-shell {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.64);
+  padding: 8px 8px 0;
+}
+
+@media (max-width: 48rem) {
+  .page-shell {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .hero-copy {
+    font-size: 0.98rem;
+  }
+}
